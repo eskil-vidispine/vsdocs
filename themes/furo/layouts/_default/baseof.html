@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
+  {{ partial "head.html" . }}
+  
+  <body>
+    <header class="banner {{if .Site.Params.banner.bg_image}} bg-cover{{else}}bg-primary{{end}}" data-background="{{ .Site.Params.banner.bg_image | absURL }}">
+      {{ if .IsHome }}
+      {{ "<!-- header -->" | safeHTML }}
+        {{ partial "navigation.html" . }}
+        {{ partial "banner.html" . }}
+      </header>
+      {{ "<!-- /header -->" | safeHTML }}
+      {{ else }}
+      {{ "<!-- header -->" | safeHTML }}
+        {{ partial "navigation.html" . }}
+      {{ "<!-- /header -->" | safeHTML }}
+      {{ end }}
+    </header>
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+  </body>
+
+</html>

@@ -1,0 +1,96 @@
+baseURL = "http://transfer.vidispine.com/vsdocs/"
+languageCode = "en-us"
+title = "Vidispine"
+theme = "Furo"
+defaultContentLanguage = "en"
+
+[params]
+# customize color
+primary_color = "#02007e"
+body_color = "#f9f9f9"
+text_color = "#636363"
+text_color_dark = "#242738"
+white_color = "#ffffff"
+light_color = "#f8f9fa"
+
+# font family
+font_family = "lato" # Choose font family from : https://fonts.google.com/
+
+[Languages.en]
+languageName = "English"
+languageCode = "en-us"
+title = "Vidispine"
+weight = 1
+
+[Languages.en.params.banner]
+title = "docs.vidispine.com"
+subtitle = "The place for all documentation and learning for developers and users of Vidispine products."
+bg_image = "images/banner.jpg"
+placeholder = "Have a question? Just ask here or enter terms"
+
+# call to action
+[Languages.en.params.cta]
+enable = true
+title = "Didn't find an answer to your question?"
+content = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+# call to action button
+
+[Languages.en.params.cta.button]
+enable = true
+label = "Contact us"
+link = "contact"
+
+[[Languages.en.params.guide]]
+title = "Browse the Knowledge Base"
+content = "Tips and tricks to get you up to speed with the Vidispine products."
+link = "https://support.vidispine.com/space/CKB"
+
+[[Languages.en.params.guide]]
+title = "Submit a Support Ticket"
+content = "Need a hand? Submit a ticket."
+link = "https://vidispine.atlassian.net/servicedesk/customer/portals"
+
+[[Languages.en.menu.main]]
+name = "Documentation"
+url = "/documentation"
+weight = 1
+
+[Languages.de]
+languageName = "Deutsch"
+languageCode = "en-us"
+title = "Vidispine"
+weight = 2
+
+[Languages.de.params.banner]
+title = "docs.vidispine.com"
+subtitle = "Der Ort für die gesamte Dokumentation und das Lernen für Entwickler und Benutzer von Vidispine-Produkten. "
+bg_image = "images/banner.jpg"
+placeholder = "Eine Frage haben? Fragen Sie einfach hier oder geben Sie Begriffe ein "
+
+# call to action
+[Languages.de.params.cta]
+enable = true
+title = "Haben Sie keine Antwort auf Ihre Frage gefunden?"
+content = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+# call to action button
+
+[Languages.de.params.cta.button]
+enable = true
+label = "Kontaktiere uns"
+link = "contact"
+
+[[Languages.de.params.guide]]
+title = "Durchsuchen Sie die Knowledge Base"
+content = "Tipps und Tricks, um Sie mit den Vidispine-Produkten vertraut zu machen."
+link = "https://support.vidispine.com/space/CKB"
+
+[[Languages.de.params.guide]]
+title = "Senden Sie ein Support-Ticket"
+content = "Brauche Hilfe? Legen Sie eine Karte vor."
+link = "https://vidispine.atlassian.net/servicedesk/customer/portals"
+
+[[Languages.de.menu.main]]
+name = "Dokumentation"
+url = "/documentation"
+weight = 1
+

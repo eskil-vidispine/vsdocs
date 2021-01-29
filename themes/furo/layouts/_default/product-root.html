@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<section class="section">
+    <div class="container">
+      <article role="main">
+        <h1>{{ .Title }}</h2>
+        {{ if .Content }}
+        {{.Content}}
+        {{ end }}
+
+        {{ "<!-- topics -->" | safeHTML }}
+        <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="section-title">{{ i18n "topics_title" | safeHTML }}</h2>
+            </div>
+            {{ "<!-- topic-item -->" | safeHTML }}
+            {{ range (where .Site.Pages "Type" "product") }}
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <a href="{{ .Permalink }}" class="px-4 py-5 shadow text-center d-block match-height" style="color: inherit">
+                <!--{{ with .Params.icon}}<i class="{{.}} icon text-primary d-block mb-4"></i>{{end}}-->
+                <h3 class="mb-3 mt-0">{{ .Title }}</h3>
+                {{with .Params.description}}<p class="mb-0">{{. | markdownify}}</p>{{end}}
+                </a>
+            </div>
+            {{ end }}
+            </div>
+        </div>
+        </section>
+        {{ "<!-- /topics -->" | safeHTML }}
+    </article>
+  </div>
+</section>
+{{ end }}
